@@ -12,10 +12,10 @@ get_header(); ?>
 
 
 		<?php while ( have_posts() ) : the_post(); ?>
-		<?php if ( has_post_thumbnail() ) { 
+		<?php if ( has_post_thumbnail() ) {
 				$large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' ); ?>
 			<div class="splash" style="background-image: linear-gradient(
-      rgba(0, 0, 0, 0.4), 
+      rgba(0, 0, 0, 0.4),
       rgba(0, 0, 0, 0.4)
     ), url('<?php echo $large_image_url[0] ?>')">
 				<header class="entry-header">
@@ -93,6 +93,9 @@ get_header(); ?>
 		</main><!-- #main -->
 
 	</div><!-- #primary -->
+
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5489c31f06c02aa6" async="async"></script>
 
 
 <?php //get_sidebar(); ?>

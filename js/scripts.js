@@ -1,6 +1,8 @@
 ( function( $ ) {
 
 $(document).ready(function(){
+
+	/* Fixed Menu
 	$(window).scroll(function(){
         scroll = $(window).scrollTop();
 	    if (scroll >= 120) {
@@ -9,7 +11,9 @@ $(document).ready(function(){
 	    else {
 	   		$('.site-branding').removeClass('smallogo');
 	    }
-	});
+	}); */
+
+
 });
 
 } )( jQuery );
