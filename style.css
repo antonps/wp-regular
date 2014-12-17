@@ -1,5 +1,6 @@
 @import url('base.css');
 @import url('icons.css');
+@import url('fonts/san-francisco.css');
 
 /*
 Theme Name: Regular
@@ -29,7 +30,7 @@ a:active {
 }
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
-	font-weight: normal;
+	font-weight: bold;
 	line-height: 1.2;
 	margin-bottom: 0.5em;
 }
@@ -145,10 +146,11 @@ button:hover, input[type="button"]:hover, input[type="submit"]:hover, .more-link
 }
 /* Regular Theme Custom CSS */
 body, button, input, select, textarea {
-	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: 'San Francisco', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	color: #222;
 	line-height: 1.4;
 	font-size: 15px;
+	font-weight: normal;
 }
 .entry-title a {
 	color: #222;
@@ -367,6 +369,9 @@ position: relative;
 }
 .form-allowed-tags, .form-allowed-tags code {
 	font-size: 90%;
+}
+.entry-footer {
+	text-align: center;
 }
 @-webkit-keyframes hue {
   from {
