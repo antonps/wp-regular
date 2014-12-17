@@ -90,6 +90,8 @@ function regular_posted_on() {
 
 	echo '<span class="posted-on">' . $posted_on . '</span> &nbsp;&nbsp;&nbsp; <span class="byline"> ' . $byline . '</span> &nbsp;&nbsp;&nbsp;';
 
+	// Hide category and tag text for pages.
+	if ( 'post' == get_post_type() ) {
 		/* translators: used between list items, there is a space after the comma */
 		$categories_list = get_the_category_list( __( ', ', 'regular' ) );
 		if ( $categories_list && regular_categorized_blog() ) {
@@ -101,7 +103,7 @@ function regular_posted_on() {
 		if ( $tags_list ) {
 			//printf( '<span class="tags-links">' . __( '%1$s', 'regular' ) . '</span>', $tags_list );
 		}
-	
+	}
 
 }
 endif;

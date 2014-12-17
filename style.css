@@ -1,18 +1,17 @@
-@import url('base.css');
-@import url('icons.css');
-@import url('fonts/san-francisco.css');
-
 /*
-Theme Name: Regular
-Theme URI: http://underscores.me/
-Author: Underscores.me
-Author URI: http://underscores.me/
-Description: Description
-Version: 1.0-wpcom
+Theme Name: WP Regular
+Author: Anton Saputro
+Author URI: http://antonps.com
+Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: regular
+GitHub Theme URI: https://github.com/antonps/wp-regular
 */
+
+@import url('base.css');
+@import url('icons.css');
+@import url('fonts/san-francisco.css');
 
 /* Fonts */
 
