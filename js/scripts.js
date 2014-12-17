@@ -5,17 +5,19 @@ $(document).ready(function(){
 
 	$('.entry-content :header').wrapInner('<span>');
 
-	/* Fixed Menu
 	$(window).scroll(function(){
         scroll = $(window).scrollTop();
-	    if (scroll >= 120) {
+	    if (scroll >= 1) {
 	      $('.site-branding').addClass('smallogo');
 	    }
 	    else {
 	   		$('.site-branding').removeClass('smallogo');
 	    }
-	}); */
+	});
 
+	$('.site-branding').click(function(){
+		$('#site-navigation').fadeToggle();
+	});
 
 });
 

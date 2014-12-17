@@ -35,7 +35,7 @@ h1, h2, h3, h4, h5, h6 {
 	margin-bottom: 0.5em;
 }
 h1 {
-	font-size: 250%;
+	font-size: 240%;
 	letter-spacing: -1px;
 }
 h2 {
@@ -157,6 +157,7 @@ body, button, input, select, textarea {
 .entry-header .wp-post-image {
 	width: 100%;
 	height: auto;
+	display: block;
 }
 .entry-header h1 {
 	border-top: 2px solid #33cc99;
@@ -164,13 +165,11 @@ body, button, input, select, textarea {
 	width: 100%;
 	max-width: 650px;
 	padding-top: 0.2em;
+	margin-bottom: 0;
 }
 
 .entry-content p {
 	line-height: 1.8;
-}
-
-.entry-content .lead, .entry-content .more-link {
 }
 .entry-content .more-link {
 	display: block;
@@ -179,23 +178,19 @@ body, button, input, select, textarea {
 	text-align: center;
 }
 .entry-content .lead {
-	font-size: 150%;
+	font-size: 125%;
 	font-weight: 100;
 	text-align: center;
-	color: #777;
 	line-height: 1.4;
 }
 .entry-content img {
-	margin: 5px auto 20px;
+	margin: 8px auto 15px;
 }
 .entry-content .alignright {
-	margin-right: -5.5%;
 	margin-left: 25px;
 }
 .entry-content .alignleft {
-	margin-left: -5.5%;
 	margin-right: 25px;
-
 }
 .entry-content h1, .entry-content h2, .entry-content h3, .entry-content h4, .entry-content h5, .center-lined {
 	text-align: center;
@@ -213,7 +208,6 @@ body, button, input, select, textarea {
 	width: 95%;
 	padding: 0 10px 0 20px;
 	margin: 0 auto;
-	overflow: hidden;
 }
 .site-footer {
 	max-width: 700px;
@@ -222,23 +216,27 @@ body, button, input, select, textarea {
 	text-align: center;
 	margin: 0 auto 50px;
 }
+#content {
+	margin-top: 100px;
+}
 .splash {
 	width: 100%;
-	min-height: 500px;
 	background-size: cover;
 	background-position: center;
-	margin-top: -120px;
+	margin-top: -100px;
+
 }
 .splash .entry-header h1 {
 	color: white;
 	border-top: none;
 	font-size: 500%;
-	margin-top: 25%;
+	margin-top: 400px;
 	margin-bottom: 0;
 	line-height: 1;
 	padding: 10px 20px 40px;
 	max-width: 700px;
 	letter-spacing: -3px;
+	border-bottom: 4px solid #33cc99;
 }
 .comments-link {
 	display: none;
@@ -246,6 +244,9 @@ body, button, input, select, textarea {
 .site-header {
 	width: 100%;
 	text-align: center;
+	position: fixed;
+	top: 0;
+	z-index: 2;
 }
 
 
@@ -255,14 +256,15 @@ body, button, input, select, textarea {
 	margin: 0 auto;
 	position: relative;
 	z-index: 2;
-		padding: 10px 0;
-
+	padding: 10px 0;
+	cursor: pointer;
 }
 .smallogo {
 	width: 50px;
 	height: 50px !important;
 	border-top: none;
 	margin-top: 0;
+	background-color: white;
 }
 .site-branding a {
 	color: black;
@@ -273,28 +275,26 @@ body, button, input, select, textarea {
 	width: 60px;
 }
 .smallogo img {
-	margin-top: 5px;
+	margin-top: -5px;
 	width: 40px;
 }
 .single .site-branding {
 	background-color: white;
+	margin-top: -10px;
+}
+.single .site-branding.smallogo {
+	margin-top: 0;
 }
 /* Navigation */
 .main-navigation {
 display: none;
 text-align: center;
-position: relative;
-}
-.main-navigation .menu {
-	background-color: white;
-	padding: 15px;
-	width: 200px;
-	margin: 0 auto;
-	border: 2px solid #33cc99;
-	position: absolute;
-	left: 50%;
-	margin-left: -100px;
-	top: 0;
+position: absolute;
+top: 0;
+width: 100%;
+background-color: rgba(255,255,255,0.9);
+margin: 0 auto;
+padding: 100px 0 2000px;
 }
 .main-navigation li {
 	float: none;
@@ -303,9 +303,8 @@ position: relative;
 	color: black;
 	font-weight: bold;
 	margin-bottom: 10px;
-}
-.site-header:hover .main-navigation {
-	display: inline-block;
+	display: block;
+	font-size: 110%;
 }
 
 .navigation .nav-links div, .nav-links {
@@ -328,15 +327,27 @@ position: relative;
 	max-width: 700px;
 }
 @media screen and (max-width: 800px) {
+	body {
+		font-size: 14px;
+	}
 	.splash .entry-header h1 {
-		font-size: 300% ;
-		margin-top: 40%;
+		font-size: 350% ;
 		max-width: 400px;
+		letter-spacing: -1px;
 	}
 	#related_posts ul li {
 		width: 100%;
 		padding: 0 5%;
 		margin-bottom: 40px;
+	}
+	.lead {
+		font-size: 120%; 
+	}
+}
+@media screen and (max-width: 400px) {
+	.splash .entry-header h1 {
+		font-size: 250% ;
+		letter-spacing: 0;
 	}
 }
 .comment-list, .comment-list .children {
@@ -378,6 +389,28 @@ position: relative;
 }
 .entry-footer {
 	text-align: center;
+}
+blockquote {
+	margin: 0;
+	padding: 0 20px;
+	font-size: 110%;
+	font-weight: bold;
+	color: #777;
+	position: relative;
+	margin-left: 40px;
+}
+blockquote:before {
+	content: "❝";
+	position: absolute;
+	left: -40px;
+	font-size: 400%;
+	color: #33cc99;
+	top: 0;
+	line-height: 1;
+}
+.entry-content blockquote p {
+		line-height: 1.4;
+
 }
 @-webkit-keyframes hue {
   from {
