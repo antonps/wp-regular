@@ -614,7 +614,6 @@ a:active {
 	margin: 0 0 1.5em;
 }
 
-.byline,
 .updated:not(.published) {
 	display: none;
 }
