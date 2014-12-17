@@ -102,12 +102,7 @@ button:hover, input[type="button"]:hover, input[type="submit"]:hover, .more-link
 }
 
 
-/* Footer */
 
-.site-footer {
-	padding: 50px 0;
-	text-align: center;
-}
 
 
 /* Related Posts */
@@ -144,6 +139,7 @@ button:hover, input[type="button"]:hover, input[type="submit"]:hover, .more-link
 .addthis_sharing_toolbox {
 	text-align: center;
 }
+.comment-reply-title { margin-top: 20px; }
 /* Regular Theme Custom CSS */
 body, button, input, select, textarea {
 	font-family: 'San Francisco', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -171,8 +167,6 @@ body, button, input, select, textarea {
 }
 
 .entry-content p {
-	width: 90%;
-	margin: 0 auto;
 	line-height: 1.8;
 }
 
@@ -185,8 +179,8 @@ body, button, input, select, textarea {
 	text-align: center;
 }
 .entry-content .lead {
-	font-style: italic;
-	font-size: 120%;
+	font-size: 150%;
+	font-weight: 100;
 	text-align: center;
 	color: #777;
 	line-height: 1.4;
@@ -214,10 +208,19 @@ body, button, input, select, textarea {
 	padding-bottom: 0.2em;
 }
 
-#main, .site-footer {
+#main {
 	max-width: 700px;
+	width: 95%;
+	padding: 0 10px 0 20px;
 	margin: 0 auto;
 	overflow: hidden;
+}
+.site-footer {
+	max-width: 700px;
+	width: 95%;
+	padding: 0 10px 0 20px;
+	text-align: center;
+	margin: 0 auto 50px;
 }
 .splash {
 	width: 100%;
@@ -273,6 +276,9 @@ body, button, input, select, textarea {
 	margin-top: 5px;
 	width: 40px;
 }
+.single .site-branding {
+	background-color: white;
+}
 /* Navigation */
 .main-navigation {
 display: none;
@@ -306,14 +312,14 @@ position: relative;
 	float: none;
 	text-align: center;
 	width: 100%;
-	margin-bottom: 100px;
+	margin-bottom: 50px;
 }
 .navigation .nav-links div a, .nav-links a {
 
 	font-size: 300%;
 }
 .entry-meta {
-	margin: 10px auto 0;
+	margin: 25px auto 0;
 }
 .entry-meta.bordered {
 	border-top: 2px solid #33cc99;

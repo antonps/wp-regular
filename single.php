@@ -14,26 +14,16 @@ get_header(); ?>
 		<?php while ( have_posts() ) : the_post(); ?>
 		<?php if ( has_post_thumbnail() ) {
 				$large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' ); ?>
-			<div class="splash" style="background-image: linear-gradient(
-      rgba(0, 0, 0, 0.4),
-      rgba(0, 0, 0, 0.4)
-    ), url('<?php echo $large_image_url[0] ?>')">
+			<div class="splash" style="background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url('<?php echo $large_image_url[0] ?>')">
 				<header class="entry-header">
 					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 				</header><!-- .entry-header -->
-
 			</div>
-			<div class="entry-meta bordered">
-						<?php regular_posted_on(); ?>
-					</div><!-- .entry-meta -->
 			<?php } else {
 			?>
 			<header class="entry-header">
 					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 				</header><!-- .entry-header -->
-				<div class="entry-meta">
-						<?php regular_posted_on(); ?>
-					</div><!-- .entry-meta -->
 			<?php } ?>
 
 		<main id="main" class="site-main" role="main">

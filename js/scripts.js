@@ -2,6 +2,9 @@
 
 $(document).ready(function(){
 
+
+	$('.entry-content :header').wrapInner('<span>');
+
 	/* Fixed Menu
 	$(window).scroll(function(){
         scroll = $(window).scrollTop();

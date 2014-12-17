@@ -12,9 +12,9 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'regular' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'regular' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( __( 'Theme: %1$s by %2$s.', 'regular' ), 'Regular', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
+			© 2014 <?php echo get_bloginfo( 'name' ) ?>
+
+
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
