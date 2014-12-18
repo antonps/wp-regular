@@ -2,7 +2,7 @@
 Theme Name: WP Regular
 Author: Anton Saputro
 Author URI: http://antonps.com
-Version: 1.0.2
+Version: 1.0.3
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: regular
@@ -48,6 +48,9 @@ h3 {
 hr {
 	clear: both;
 }
+strong {
+	font-weight: bold !important;
+}
 
 /* Layout */
 
@@ -76,24 +79,23 @@ label {
 }
 
 
-button, input[type="button"], input[type="submit"], .more-link {
+button, .button, input[type="button"], input[type="submit"], .more-link {
 	background-color: #33cc99;
 	border: 2px solid #33cc99;
 	box-shadow: none;
 	text-shadow: none;
-	color: white;
+	color: white !important;
 	padding: 5px 15px;
 	font-size: 100%;
-	font-weight: bold;
 	line-height: inherit;
 	border-radius: 2px;
 }
 
-button:hover, input[type="button"]:hover, input[type="submit"]:hover, .more-link:hover {
+button:hover, .button, input[type="button"]:hover, input[type="submit"]:hover, .more-link:hover {
 	background-color: transparent;
 	border: 2px solid #33cc99;
 	box-shadow: none;
-	color: #33cc99;
+	color: #33cc99 !important;
 }
 
 .edit-link a {
@@ -381,6 +383,38 @@ blockquote:before {
 	margin: 0 -20px;
 	display: block;
 }
+
+.numero {
+	text-align: center;
+	font-size: 200%;
+	font-weight: bold;
+	color: white;
+	margin-bottom: -20px;
+}
+.numero span {
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+	border-radius: 50%;
+	background-color: #33cc99;
+	position: relative;
+}
+.numero small {
+	font-size: 60%;
+	font-weight: 100;
+	color: #eee;
+}
+
+.first-letter {
+	font-size: 300%;
+	float: left;
+	margin-right: 10px;
+	color: #33cc99;
+	font-weight: 100;
+	line-height: 1.1;
+}
+
 @media screen and (max-width: 800px) {
 	body {
 		font-size: 14px;
