@@ -20,14 +20,14 @@ function regular_paging_nav() {
 	<nav class="navigation paging-navigation" role="navigation">
 		<h1 class="screen-reader-text"><?php _e( 'Posts navigation', 'regular' ); ?></h1>
 		<div class="nav-links">
-
+		<?php if ( get_previous_posts_link() ) : ?>
+			<div class="nav-next button-inv"><?php previous_posts_link( __( '<span class="icon-arrow-left"></span>&nbsp;', 'regular' ) ); ?></div>
+			<?php endif; ?>
 			<?php if ( get_next_posts_link() ) : ?>
-			<div class="nav-previous button-inv"><?php next_posts_link( __( '<span class="icon-arrow-right"></span>', 'regular' ) ); ?></div>
+			<div class="nav-previous button-inv"><?php next_posts_link( __( '&nbsp;<span class="icon-arrow-right"></span>', 'regular' ) ); ?></div>
 			<?php endif; ?>
 
-			<?php if ( get_previous_posts_link() ) : ?>
-			<div class="nav-next button-inv"><?php previous_posts_link( __( '<span class="icon-arrow-left"></span>', 'regular' ) ); ?></div>
-			<?php endif; ?>
+
 
 		</div><!-- .nav-links -->
 	</nav><!-- .navigation -->

@@ -2,7 +2,7 @@
 Theme Name: WP Regular
 Author: Anton Saputro
 Author URI: http://antonps.com
-Version: 1.0
+Version: 1.0.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: regular
@@ -38,7 +38,7 @@ h1 {
 	letter-spacing: -1px;
 }
 h2 {
-	font-size: 150%;
+	font-size: 170%;
 	letter-spacing: -0.5px;
 }
 h3 {
@@ -204,8 +204,8 @@ body, button, input, select, textarea {
 
 #main {
 	max-width: 700px;
-	width: 95%;
-	padding: 0 10px 0 20px;
+	width: 100%;
+	padding: 0 20px;
 	margin: 0 auto;
 }
 .site-footer {
@@ -306,15 +306,21 @@ padding: 100px 0 2000px;
 	font-size: 110%;
 }
 
-.navigation .nav-links div, .nav-links {
+.nav-links {
 	float: none;
 	text-align: center;
 	width: 100%;
 	margin-bottom: 50px;
 }
-.navigation .nav-links div a, .nav-links a {
+.nav-links a {
 
 	font-size: 300%;
+}
+.paging-navigation .nav-links div {
+	float: none;
+	width: auto;
+	text-align: center;
+	display: inline-block;
 }
 .entry-meta {
 	margin: 25px auto 0;
@@ -325,30 +331,7 @@ padding: 100px 0 2000px;
 	margin-top: 0;
 	max-width: 700px;
 }
-@media screen and (max-width: 800px) {
-	body {
-		font-size: 14px;
-	}
-	.splash .entry-header h1 {
-		font-size: 350% ;
-		max-width: 400px;
-		letter-spacing: -1px;
-	}
-	#related_posts ul li {
-		width: 100%;
-		padding: 0 5%;
-		margin-bottom: 40px;
-	}
-	.lead {
-		font-size: 120%; 
-	}
-}
-@media screen and (max-width: 400px) {
-	.splash .entry-header h1 {
-		font-size: 250% ;
-		letter-spacing: 0;
-	}
-}
+
 .comment-list, .comment-list .children {
 	list-style: none;
 }
@@ -411,12 +394,37 @@ blockquote:before {
 		line-height: 1.4;
 
 }
-@-webkit-keyframes hue {
-  from {
-    -webkit-filter: hue-rotate(0deg);
-  }
 
-  to {
-    -webkit-filter: hue-rotate(-360deg);
-  }
+@media screen and (max-width: 800px) {
+	body {
+		font-size: 14px;
+	}
+	.splash .entry-header h1 {
+		font-size: 350% ;
+		max-width: 400px;
+		letter-spacing: -1px;
+	}
+	#related_posts ul li {
+		width: 100%;
+		padding: 0 5%;
+		margin-bottom: 40px;
+	}
+	.entry-content .lead {
+		font-size: 120%;
+	}
+}
+@media screen and (max-width: 400px) {
+
+	.splash .entry-header h1 {
+		font-size: 250% ;
+		letter-spacing: 0;
+	}
+	.entry-header h1 {
+		font-size: 210%;
+		letter-spacing: -0.5px;
+	}
+	.entry-meta > span {
+		display: block !important;
+		margin-top: -10px;
+	}
 }
