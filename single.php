@@ -19,14 +19,15 @@ get_header(); ?>
 					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 				</header><!-- .entry-header -->
 			</div>
+			<main id="main" class="site-main" role="main">
 			<?php } else {
 			?>
+					<main id="main" class="site-main" role="main">
 			<header class="entry-header">
 					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 				</header><!-- .entry-header -->
 			<?php } ?>
 
-		<main id="main" class="site-main" role="main">
 
 			<?php get_template_part( 'content', 'single' ); ?>
 
