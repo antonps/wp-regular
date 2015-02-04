@@ -13,18 +13,9 @@
 	</div>
 </div>
 
-<a href="mailto:antonpsaputro@gmail.com" class="button contact-btn">Contact</a>
+<a href="mailto:antonpsaputro@gmail.com" class="button contact-btn"><span class="icon-envelope"></span> Contact</a>
 
 </div>
-
-
-  <style>
-   .container {
-   	width: 900px;
-   	height: 560px;
-   	margin: 0 auto;
-   }
-  </style>
 
 
 <script>

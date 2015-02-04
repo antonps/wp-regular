@@ -2,7 +2,7 @@
 Theme Name: WP Regular
 Author: Anton Saputro
 Author URI: http://antonps.com
-Version: 1.0.3
+Version: 1.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: regular
@@ -217,9 +217,6 @@ body, button, input, select, textarea {
 	text-align: center;
 	margin: 0 auto 50px;
 }
-#content {
-	margin-top:80px;
-}
 .splash {
 	width: 100%;
 	background-size: cover;
@@ -245,7 +242,7 @@ body, button, input, select, textarea {
 .site-header {
 	width: 100%;
 	text-align: center;
-	position: fixed;
+	position: relative;
 	top: 0;
 	z-index: 2;
 }
@@ -275,11 +272,12 @@ body, button, input, select, textarea {
 display: none;
 text-align: center;
 position: absolute;
-top: 0;
-width: 100%;
+top: 78px;
+left: 50%;
+margin-left: -150px;
+width: 300px;
 background-color: white;
-margin: 0 auto;
-padding: 100px 0 2000px;
+padding: 20px;
 }
 .main-navigation li {
 	float: none;
@@ -397,7 +395,7 @@ blockquote:before {
 	height: 60px;
 	line-height: 60px;
 	border-radius: 50%;
-	background-color: #33cc99;
+	background-color: #ccc;
 	position: relative;
 }
 .numero small {
@@ -414,14 +412,11 @@ blockquote:before {
 	font-weight: 100;
 	line-height: 1.1;
 }
-.home #content {
-	margin-top: 50px;
-}
 .home-page {
 	text-align: center;
 }
 .home-page h1 {
-	margin: 0;
+	margin: -10px auto 0;
 	color: #999;
 	font-weight: lighter;
 	font-size: 300%;
@@ -431,10 +426,14 @@ blockquote:before {
 	color: #22bb88;
 }
 .contact-btn {
-	margin: 50px auto;
-	font-size: 120%;
-	padding: 8px 16px;
+	margin: 10px auto 50px; 
+	display: inline-block;
 }
+   .container {
+   	width: 100%;
+   	max-width: 600px;
+   	margin: 0 auto;
+   }
 @media screen and (max-width: 800px) {
 	body {
 		font-size: 14px;
