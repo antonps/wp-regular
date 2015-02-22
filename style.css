@@ -9,23 +9,24 @@ Text Domain: regular
 GitHub Theme URI: https://github.com/antonps/wp-regular
 */
 
+@import url('css/bootstrap.css');
+@import url('css/outicons.css');
 @import url('base.css');
-@import url('icons.css');
-@import url('fonts/san-francisco.css');
 
 /* Fonts */
 
 a {
-	color: #22bb88;
+	color: #8db7cc;
 	text-decoration: none;
 }
 a:visited {
-	color: #22bb88;
+	color: #8db7cc;
 }
 a:hover,
 a:focus,
 a:active {
 	color: #999;
+	text-decoration: none;
 }
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
@@ -80,8 +81,8 @@ label {
 
 
 button, .button, input[type="button"], input[type="submit"], .more-link {
-	background-color: #33cc99;
-	border: 2px solid #33cc99;
+	background-color: #8db7cc;
+	border: 2px solid #8db7cc;
 	box-shadow: none;
 	text-shadow: none;
 	color: white !important;
@@ -93,17 +94,14 @@ button, .button, input[type="button"], input[type="submit"], .more-link {
 
 button:hover, .button:hover, input[type="button"]:hover, input[type="submit"]:hover, .more-link:hover {
 	background-color: transparent;
-	border: 2px solid #33cc99;
+	border: 2px solid #8db7cc;
 	box-shadow: none;
-	color: #33cc99 !important;
+	color: #8db7cc !important;
 }
 
 .edit-link a {
 	display: none;
 }
-
-
-
 
 
 /* Related Posts */
@@ -126,7 +124,7 @@ button:hover, .button:hover, input[type="button"]:hover, input[type="submit"]:ho
 }
 #related_posts ul li img {
 	border-radius: 50%;
-	border: 1px solid #33cc99;
+	border: 1px solid #8db7cc;
 }
 #related_posts ul li:nth-child(3n) {
 	margin-right: 0;
@@ -143,14 +141,14 @@ button:hover, .button:hover, input[type="button"]:hover, input[type="submit"]:ho
 .comment-reply-title { margin-top: 20px; }
 /* Regular Theme Custom CSS */
 body, button, input, select, textarea {
-	font-family: 'San Francisco', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	color: #222;
+	font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color: #1d282b;
 	line-height: 1.4;
-	font-size: 15px;
+	font-size: 16px;
 	font-weight: normal;
 }
 .entry-title a {
-	color: #222;
+	color: #1d282b;
 }
 .entry-header, .entry-meta {
 	text-align: center;
@@ -161,16 +159,12 @@ body, button, input, select, textarea {
 	display: block;
 }
 .entry-header h1 {
-	border-top: 2px solid #33cc99;
+	border-top: 2px solid #8db7cc;
 	display: inline-block;
 	width: 100%;
 	max-width: 650px;
 	padding-top: 15px;
 	margin-bottom: 0;
-}
-
-.entry-content p {
-	line-height: 1.8;
 }
 .entry-content .more-link {
 	display: block;
@@ -199,7 +193,7 @@ body, button, input, select, textarea {
 }
 
 .entry-content h1 span, .entry-content h2 span, .entry-content h3 span, .entry-content h4 span, .entry-content h5 span, .center-lined span {
-	border-bottom: 1px solid #33cc99;
+	border-bottom: 1px solid #8db7cc;
 	display: inline-block;
 	padding-bottom: 0.2em;
 }
@@ -234,7 +228,7 @@ body, button, input, select, textarea {
 	padding: 10px 20px 40px;
 	max-width: 700px;
 	letter-spacing: -3px;
-	border-bottom: 4px solid #33cc99;
+	border-bottom: 4px solid #8db7cc;
 }
 .comments-link {
 	display: none;
@@ -309,7 +303,7 @@ padding: 20px;
 	margin: 25px auto 0;
 }
 .entry-meta.bordered {
-	border-top: 2px solid #33cc99;
+	border-top: 2px solid #8db7cc;
 	padding-top: 30px;
 	margin-top: 0;
 	max-width: 700px;
@@ -343,7 +337,7 @@ padding: 20px;
 }
 .comment-content {
 	padding: 15px;
-	border-top: 1px solid #33cc99;
+	border-top: 1px solid #8db7cc;
 	background-color: #f7f7f7;
 }
 .reply {
@@ -369,7 +363,7 @@ blockquote:before {
 	position: absolute;
 	left: -40px;
 	font-size: 400%;
-	color: #33cc99;
+	color: #8db7cc;
 	top: -5px;
 	line-height: 1;
 }
@@ -408,7 +402,7 @@ blockquote:before {
 	font-size: 300%;
 	float: left;
 	margin-right: 10px;
-	color: #33cc99;
+	color: #8db7cc;
 	font-weight: 100;
 	line-height: 1.1;
 }
@@ -423,7 +417,7 @@ blockquote:before {
 }
 .home-page h2 {
 	margin: 5px auto;
-	color: #22bb88;
+	color: #8db7cc;
 }
 .contact-btn {
 	margin: 10px auto 50px; 
@@ -469,3 +463,68 @@ blockquote:before {
 		margin-top: -10px;
 	}
 }
+
+/* V2 */
+
+
+body {
+  letter-spacing: -0.02em; }
+
+.section {
+  min-height: 320px;
+  padding: 40px; }
+
+.container {
+  position: relative; }
+
+#main-img {
+  width: 100%;
+  max-width: 221px;
+  height: auto;
+  position: absolute;
+  left: 0;
+  top: -75px; }
+
+#about {
+  background-color: #8db7cc;
+  color: #1a2428; }
+  #about a {
+    color: white; }
+  #about h1 {
+    margin: 0 0 10px;
+    font-size: 50px; }
+  #about h3 {
+    margin-top: 0;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-size: 21px;
+    color: white; }
+  #about p {
+    max-width: 375px;
+    font-size: 17px; }
+
+#outicon {
+  background-color: #1a2428;
+  color: white; }
+
+.main-menu {
+  padding: 30px 40px; }
+  .main-menu ul {
+    margin: 15px 0; }
+  .main-menu li {
+    display: inline-block;
+    margin-right: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px; }
+  .main-menu a {
+    color: #1a2428; }
+
+#svg-logo {
+  float: left;
+  margin-right: 20px; }
+
+.svg-icon {
+  position: relative;
+  top: 12px;
+  margin-right: 2px; }
