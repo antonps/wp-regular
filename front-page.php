@@ -13,7 +13,7 @@
 	</div>
 </div>
 
-<a href="mailto:antonpsaputro@gmail.com" class="button contact-btn"><span class="icon-envelope"></span> Contact</a>
+<a href="mailto:antonpsaputro@gmail.com" class="button contact-btn"><span class="oi-mail"></span> Contact</a>
 
 </div>
 

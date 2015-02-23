@@ -114,12 +114,13 @@ button:hover, .button:hover, input[type="button"]:hover, input[type="submit"]:ho
 	padding: 0;
 	margin: 0;
 	overflow: hidden;
+	text-align: center;
 }
 #related_posts ul li {
-	float: left;
+	display: inline-block;
 	text-align: center;
 	width: 30%;
-	margin-right: 5%;
+	margin: 0 1%;
 	vertical-align: top;
 }
 #related_posts ul li img {
@@ -138,13 +139,20 @@ button:hover, .button:hover, input[type="button"]:hover, input[type="submit"]:ho
 .addthis_sharing_toolbox {
 	text-align: center;
 }
-.comment-reply-title { margin-top: 20px; }
+.comment-reply-title { 
+	margin-top: 20px; 
+}
+#disqus_thread {
+	margin-bottom: 40px;
+}
+
 /* Regular Theme Custom CSS */
+
 body, button, input, select, textarea {
 	font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	color: #1d282b;
 	line-height: 1.4;
-	font-size: 16px;
+	font-size: 15px;
 	font-weight: normal;
 }
 .entry-title a {
@@ -266,7 +274,7 @@ body, button, input, select, textarea {
 display: none;
 text-align: center;
 position: absolute;
-top: 78px;
+top: 70px;
 left: 50%;
 margin-left: -150px;
 width: 300px;
@@ -528,3 +536,7 @@ body {
   position: relative;
   top: 12px;
   margin-right: 2px; }
+
+  .centered {
+  	text-align: center;
+  }

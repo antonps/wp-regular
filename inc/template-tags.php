@@ -21,10 +21,10 @@ function regular_paging_nav() {
 		<h1 class="screen-reader-text"><?php _e( 'Posts navigation', 'regular' ); ?></h1>
 		<div class="nav-links">
 		<?php if ( get_previous_posts_link() ) : ?>
-			<div class="nav-next button-inv"><?php previous_posts_link( __( '<span class="icon-arrow-left"></span>&nbsp;', 'regular' ) ); ?></div>
+			<div class="nav-next button-inv"><?php previous_posts_link( __( '<span class="oi-arrow-left"></span>&nbsp;', 'regular' ) ); ?></div>
 			<?php endif; ?>
 			<?php if ( get_next_posts_link() ) : ?>
-			<div class="nav-previous button-inv"><?php next_posts_link( __( '&nbsp;<span class="icon-arrow-right"></span>', 'regular' ) ); ?></div>
+			<div class="nav-previous button-inv"><?php next_posts_link( __( '&nbsp;<span class="oi-arrow-right"></span>', 'regular' ) ); ?></div>
 			<?php endif; ?>
 
 
@@ -52,8 +52,8 @@ function regular_post_nav() {
 		<h1 class="screen-reader-text"><?php _e( 'Post navigation', 'regular' ); ?></h1>
 		<div class="nav-links">
 			<?php
-				previous_post_link( '%link', _x( '<span class="icon-arrow-left"></span> ', 'Previous post link', 'regular' ) );
-				next_post_link(     '%link',     _x( ' <span class="icon-arrow-right"></span>', 'Next post link',     'regular' ) );
+				previous_post_link( '%link', _x( '<span class="oi-arrow-left"></span> ', 'Previous post link', 'regular' ) );
+				next_post_link(     '%link',     _x( ' <span class="oi-arrow-right"></span>', 'Next post link',     'regular' ) );
 			?>
 		</div><!-- .nav-links -->
 	</nav><!-- .navigation -->
@@ -79,12 +79,12 @@ function regular_posted_on() {
 	);
 
 	$posted_on = sprintf(
-		_x( '<span class="icon-clock"></span>&nbsp; %s', 'post date', 'regular' ),
+		_x( '<span class="oi-time"></span> %s', 'post date', 'regular' ),
 		'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
 	);
 
 	$byline = sprintf(
-		_x( '<span class="icon-user"></span>&nbsp; %s', 'post author', 'regular' ),
+		_x( '<span class="oi-user"></span> %s', 'post author', 'regular' ),
 		'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
 	);
 
@@ -95,7 +95,7 @@ function regular_posted_on() {
 		/* translators: used between list items, there is a space after the comma */
 		$categories_list = get_the_category_list( __( ', ', 'regular' ) );
 		if ( $categories_list && regular_categorized_blog() ) {
-			printf( '<span class="cat-links"><span class="icon-tag"></span>' . __( ' &nbsp;%1$s ', 'regular' ) . '</span>', $categories_list );
+			printf( '<span class="cat-links"><span class="oi-tags"></span>' . __( ' %1$s ', 'regular' ) . '</span>', $categories_list );
 		}
 
 		/* translators: used between list items, there is a space after the comma */

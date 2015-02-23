@@ -13,6 +13,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri() ?>/js/jquery-2.1.1.min.js"></script>
 <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri() ?>/js/scripts.js"></script>
 
