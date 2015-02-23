@@ -122,3 +122,18 @@ require get_template_directory() . '/inc/extras.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+
+function remove_more_tag_link_jump($link) {
+    $offset = strpos($link, '#more-'); //Locate the jump portion of the link
+    if ($offset) { //If we found the jump portion of the link
+        $end = strpos($link, '"', $offset); //Locate the end of the jump portion
+    }
+    if ($end) { //If we found the end of the jump portion
+        $link = substr_replace($link, '', $offset, $end-$offset); //Remove the jump portion
+    }
+    return $link; //Return the link without jump portion or just the normal link if we didn't find a jump portion
+}
+
+add_filter('the_content_more_link', 'remove_more_tag_link_jump'); //Add our function to the more link filter
+
