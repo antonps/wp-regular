@@ -9,11 +9,6 @@ $(document).ready(function(){
 	    return html.replace(/^[^a-zA-Z]*([a-zA-Z])/g, '<span class="first-letter">$1</span>');
 	});
 
-	$('.site-branding').click(function(){
-		$('#site-navigation').fadeToggle();
-
-	});
-
 });
 
 } )( jQuery );

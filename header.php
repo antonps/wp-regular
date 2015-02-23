@@ -26,11 +26,11 @@
 <div id="wrapper" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'regular' ); ?></a>
 
-	<header id="masthead" class="site-header" role="banner">
+	<header id="masthead" class="site-header container" role="banner">
 		<div class="site-branding">
-			<!-- <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php //echo substr(get_bloginfo( 'name' ), 0, 1); ?> -->
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 				<img src="<?php echo get_stylesheet_directory_uri() ?>/logo.png">
-			<!-- </a> -->
+			</a>
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">

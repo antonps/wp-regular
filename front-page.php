@@ -1,8 +1,10 @@
 
 <?php get_header(); ?>
 <div class="home-page">
+<header class="entry-header">
 <h1>Anton Saputro</h1>
 <h2>Web Developer</h2>
+</header>
 <span class="icon-pointer"></span> Jakarta, Indonesia
 
 <div class="container">
